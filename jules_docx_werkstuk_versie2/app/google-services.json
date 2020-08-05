@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "96696893017",
+    "firebase_url": "https://jules-docx-androidstudio.firebaseio.com",
+    "project_id": "jules-docx-androidstudio",
+    "storage_bucket": "jules-docx-androidstudio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96696893017:android:a50e7ce4479507034fbb48",
+        "android_client_info": {
+          "package_name": "com.example.jules_docx_werkstuk_versie2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96696893017-hd0lddi424qeo41v1i9uhpd3ok5dcosc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jules_docx_werkstuk_versie2",
+            "certificate_hash": "2922b425c3839e02acda23cef103f0d69af08a97"
+          }
+        },
+        {
+          "client_id": "96696893017-kjr2clqnuatsrprjf09mcspna7ha654h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMvPvXkrSXIILzqbfcsv2FQAFnGfPKaAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96696893017-kjr2clqnuatsrprjf09mcspna7ha654h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
