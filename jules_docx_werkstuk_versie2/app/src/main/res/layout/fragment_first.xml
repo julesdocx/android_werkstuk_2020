@@ -11,32 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <LinearLayout
-                    android:background="@color/colorAccent"
-                    android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:orientation="vertical"
-                    android:padding="20dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <ImageView
-                        android:id="@+id/testImage"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                </LinearLayout>
-            </ScrollView>
+        <ListView
+            android:id="@+id/artworkList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
