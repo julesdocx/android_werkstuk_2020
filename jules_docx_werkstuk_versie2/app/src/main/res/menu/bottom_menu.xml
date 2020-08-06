@@ -2,15 +2,22 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+        android:color="@color/colorPrimary"
         android:id="@+id/firstFragment"
         android:title="Home"
-        android:icon="@drawable/ic_home_black_24dp"/>
+        android:icon="@drawable/ic_home_black_24dp"
+        app:itemIconTint="@color/colorPrimary"/>
+
     <item
+        android:color="@color/colorPrimary"
         android:id="@+id/secondFragment"
         android:title="Hot tub"
-        android:icon="@drawable/ic_hot_tub_black_24dp"/>
+        android:icon="@drawable/ic_hot_tub_black_24dp"
+        app:itemIconTint="@color/colorPrimary"/>
     <item
+        android:color="@color/colorPrimary"
         android:id="@+id/thridFragment"
         android:title="About me"
-        android:icon="@drawable/ic_person_black_24dp"/>
+        android:icon="@drawable/ic_person_black_24dp"
+        app:itemIconTint="@color/colorPrimary"/>
 </menu>

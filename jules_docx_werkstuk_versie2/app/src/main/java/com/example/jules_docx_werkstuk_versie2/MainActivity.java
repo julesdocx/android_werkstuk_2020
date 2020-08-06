@@ -1,10 +1,13 @@
 package com.example.jules_docx_werkstuk_versie2;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import android.media.MediaPlayer;
@@ -28,19 +31,26 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.io.IOException;
 import java.util.Date;
 
+import static com.google.android.gms.common.util.CollectionUtils.setOf;
+
 public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavView;
     private NavController navController;
+    private View fragment;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private Date date;
     private Long highFives;
+    private AppBarConfiguration appBarConfiguration;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setUpNavigation();
+
+//        appBarConfiguration = new AppBarConfiguration(setOf(R.id.firstFragment, R.id.secondFragment, R.id.thridFragment));
+
     }
 
     public void addHighFives(final View view) {
@@ -105,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
         assert navHostFragment != null;
         NavigationUI.setupWithNavController(this.bottomNavView,
                 navHostFragment.getNavController());
-    }
 
+
+    }
 }
