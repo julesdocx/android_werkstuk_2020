@@ -1,13 +1,14 @@
 package com.example.jules_docx_werkstuk_versie2;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import androidx.fragment.app.Fragment;
+
+import com.squareup.picasso.Picasso;
 
 
 /**
@@ -25,9 +26,11 @@ public class firstFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        imageView = (ImageView) imageView.findViewById(R.id.testImage);
+        View view =  inflater.inflate(R.layout.fragment_first, container, false);
+        imageView = (ImageView) view.findViewById(R.id.testImage);
+        Picasso.get().load("https://i1.sndcdn.com/artworks-000557708352-yhl2hm-t500x500.jpg").into(imageView);
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_first, container, false);
+        return view;
 
     }
 
