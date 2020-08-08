@@ -52,4 +52,3 @@ dependencies {
     // Firebase / Play Services
     implementation "com.google.firebase:firebase-auth:19.3.2"
 }
-

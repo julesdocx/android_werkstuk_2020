@@ -1,8 +1,10 @@
 package com.example.jules_docx_werkstuk_versie2;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
 import android.content.ContextWrapper;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,9 +44,8 @@ public class firstFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.fragment_first, container, false);
-        //imageView = (ImageView) view.findViewById(R.id.testImage);
-        // Inflate the layout for this fragment
-
+        ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setTitle("Home");
         listView = view.findViewById(R.id.artworkList);
         MyAdapter adapter = new MyAdapter(this.getContext(), titles, artists, imgUrls);
         listView.setAdapter(adapter);
@@ -52,10 +53,33 @@ public class firstFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+                if (position == 0) {
+                    Intent intent = new Intent(getActivity(),InsertActivity.class);
+                    intent.putExtra("image", imgUrls[0]);
+                    intent.putExtra("title", titles[0]);
+                    intent.putExtra("artist", artists[0]);
+                    intent.putExtra("position", ""+0);
+                    startActivity(intent);
+                }
+                if (position == 1) {
+                    Intent intent = new Intent(getActivity(), InsertActivity.class);
+                    intent.putExtra("image", imgUrls[1]);
+                    intent.putExtra("title", titles[1]);
+                    intent.putExtra("artist", artists[1]);
+                    intent.putExtra("position", ""+1);
+                    startActivity(intent);
+                }
+                if (position == 2) {
+                    Intent intent = new Intent(getActivity(), InsertActivity.class);
+                    intent.putExtra("image", imgUrls[2]);
+                    intent.putExtra("title", titles[2]);
+                    intent.putExtra("artist", artists[2]);
+                    intent.putExtra("position", ""+2  );
+                    startActivity(intent);
+                }
             }
         });
         return view;
-
     }
 
     class MyAdapter extends ArrayAdapter<String> {
