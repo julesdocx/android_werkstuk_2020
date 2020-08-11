@@ -41,16 +41,14 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private Date date;
     private Long highFives;
-    private AppBarConfiguration appBarConfiguration;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Home");
         setContentView(R.layout.activity_main);
         setUpNavigation();
-
-//        appBarConfiguration = new AppBarConfiguration(setOf(R.id.firstFragment, R.id.secondFragment, R.id.thridFragment));
-
     }
 
     public void addHighFives(final View view) {
@@ -106,16 +104,14 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
-    public void setUpNavigation(){
+    private void setUpNavigation(){
         this.bottomNavView = this.findViewById(R.id.bottomNavigationView);
         this.navController = Navigation.findNavController(this, R.id.fragment);
-
         NavHostFragment navHostFragment = (NavHostFragment)getSupportFragmentManager()
                 .findFragmentById(R.id.fragment);
         assert navHostFragment != null;
         NavigationUI.setupWithNavController(this.bottomNavView,
                 navHostFragment.getNavController());
-
 
     }
 }

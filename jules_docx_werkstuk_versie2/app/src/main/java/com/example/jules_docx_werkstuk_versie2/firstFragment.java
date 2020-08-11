@@ -1,6 +1,5 @@
 package com.example.jules_docx_werkstuk_versie2;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
 import android.content.ContextWrapper;
@@ -18,6 +17,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.fragment.app.Fragment;
 
 import com.squareup.picasso.Picasso;
@@ -44,8 +44,6 @@ public class firstFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.fragment_first, container, false);
-        ActionBar actionBar = getActivity().getActionBar();
-        actionBar.setTitle("Home");
         listView = view.findViewById(R.id.artworkList);
         MyAdapter adapter = new MyAdapter(this.getContext(), titles, artists, imgUrls);
         listView.setAdapter(adapter);
