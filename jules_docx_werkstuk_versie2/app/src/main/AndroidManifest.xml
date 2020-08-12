@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jules_docx_werkstuk_versie2">
-    <uses-sdk android:minSdkVersion="11"  android:targetSdkVersion="19" />
 
     <application
         android:allowBackup="true"

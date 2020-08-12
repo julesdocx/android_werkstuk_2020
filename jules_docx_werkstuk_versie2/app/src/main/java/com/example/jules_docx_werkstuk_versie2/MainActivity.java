@@ -9,18 +9,8 @@ import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import androidx.room.ColumnInfo;
-import androidx.room.Dao;
-import androidx.room.Database;
-import androidx.room.Delete;
-import androidx.room.Entity;
-import androidx.room.ForeignKey;
-import androidx.room.Insert;
-import androidx.room.PrimaryKey;
-import androidx.room.Query;
 import androidx.room.Room;
-import androidx.room.RoomDatabase;
-import androidx.room.Update;
+
 
 import android.media.MediaPlayer;
 import android.nfc.Tag;
@@ -44,6 +34,7 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
+import static androidx.navigation.ui.NavigationUI.setupWithNavController;
 import static com.google.android.gms.common.util.CollectionUtils.setOf;
 
 public class MainActivity extends AppCompatActivity {
@@ -54,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private Date date;
     private Long highFives;
-
+    public static MyAppDataBase dbRoom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +54,17 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setTitle("Home");
         setContentView(R.layout.activity_main);
         setUpNavigation();
+        dbRoom = Room.databaseBuilder(getApplicationContext(),
+                MyAppDataBase.class, "database-name").allowMainThreadQueries().build();
+
+
+
+        User user = new User();
+        user.setUid(1);
+        user.setFirstName("Jules");
+        user.setLastName("Docx");
+
+        dbRoom.myDao().insertUser(user);
     }
 
     public void addHighFives(final View view) {
@@ -118,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
-    private void setUpNavigation() {
+    public void setUpNavigation() {
         this.bottomNavView = this.findViewById(R.id.bottomNavigationView);
         this.navController = Navigation.findNavController(this, R.id.fragment);
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager()

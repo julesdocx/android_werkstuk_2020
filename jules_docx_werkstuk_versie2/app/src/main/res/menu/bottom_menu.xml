@@ -4,7 +4,7 @@
     <item
         android:color="@color/colorPrimary"
         android:id="@+id/firstFragment"
-        android:title="Home"
+        android:title="Art"
         android:icon="@drawable/ic_home_black_24dp"
         app:itemIconTint="@color/colorPrimary"/>
 
@@ -12,7 +12,6 @@
         android:color="@color/colorPrimary"
         android:id="@+id/secondFragment"
         android:title="Music"
-        android:onClick="setTitleMusic"
         android:icon="@drawable/ic_hot_tub_black_24dp"
         app:itemIconTint="@color/colorPrimary"/>
     <item
