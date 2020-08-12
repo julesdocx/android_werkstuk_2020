@@ -25,4 +25,8 @@
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="8sp" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
 </FrameLayout>
