@@ -9,6 +9,18 @@ import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.room.ColumnInfo;
+import androidx.room.Dao;
+import androidx.room.Database;
+import androidx.room.Delete;
+import androidx.room.Entity;
+import androidx.room.ForeignKey;
+import androidx.room.Insert;
+import androidx.room.PrimaryKey;
+import androidx.room.Query;
+import androidx.room.Room;
+import androidx.room.RoomDatabase;
+import androidx.room.Update;
 
 import android.media.MediaPlayer;
 import android.nfc.Tag;
@@ -30,6 +42,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.io.IOException;
 import java.util.Date;
+import java.util.List;
 
 import static com.google.android.gms.common.util.CollectionUtils.setOf;
 
@@ -41,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private Date date;
     private Long highFives;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,10 +118,10 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
-    private void setUpNavigation(){
+    private void setUpNavigation() {
         this.bottomNavView = this.findViewById(R.id.bottomNavigationView);
         this.navController = Navigation.findNavController(this, R.id.fragment);
-        NavHostFragment navHostFragment = (NavHostFragment)getSupportFragmentManager()
+        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.fragment);
         assert navHostFragment != null;
         NavigationUI.setupWithNavController(this.bottomNavView,

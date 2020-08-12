@@ -51,4 +51,7 @@ dependencies {
 
     // Firebase / Play Services
     implementation "com.google.firebase:firebase-auth:19.3.2"
+    implementation 'androidx.room:room-runtime:2.1.0'
+    annotationProcessor 'androidx.room:room-compiler:2.1.0'
+    implementation 'androidx.navigation:navigation-runtime:2.3.0'
 }

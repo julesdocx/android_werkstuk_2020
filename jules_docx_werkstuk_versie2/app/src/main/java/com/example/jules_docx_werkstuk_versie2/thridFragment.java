@@ -18,6 +18,7 @@ public class thridFragment extends Fragment {
         // Required empty public constructor
     }
 
+    public static MyAppDataBase myAppDataBase;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
