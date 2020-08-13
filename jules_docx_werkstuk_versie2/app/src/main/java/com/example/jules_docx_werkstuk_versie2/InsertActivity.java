@@ -39,7 +39,8 @@ public class InsertActivity extends AppCompatActivity {
             String nArtist = intent.getStringExtra("artist");
             Picasso.get().load(img).into(imageView);
             title.setText(nTitle);
-            artist.setText(nArtist);
+            String byArtist = "By: " + nArtist;
+            artist.setText(byArtist);
             actionBar.setTitle(nTitle);
         }
 
@@ -50,7 +51,8 @@ public class InsertActivity extends AppCompatActivity {
             String nArtist = intent.getStringExtra("artist");
             Picasso.get().load(img).into(imageView);
             title.setText(nTitle);
-            artist.setText(nArtist);
+            String byArtist = "By: " + nArtist;
+            artist.setText(byArtist);
             actionBar.setTitle(nTitle);
         }
 
@@ -61,7 +63,30 @@ public class InsertActivity extends AppCompatActivity {
             String nArtist = intent.getStringExtra("artist");
             Picasso.get().load(img).into(imageView);
             title.setText(nTitle);
-            artist.setText(nArtist);
+            String byArtist = "By: " + nArtist;
+            artist.setText(byArtist);
+            actionBar.setTitle(nTitle);
+        }
+        if (position == 3) {
+            Intent intent = getIntent();
+            String img = intent.getStringExtra("image");
+            String nTitle = intent.getStringExtra("title");
+            String nArtist = intent.getStringExtra("artist");
+            Picasso.get().load(img).into(imageView);
+            title.setText(nTitle);
+            String byArtist = "By: " + nArtist;
+            artist.setText(byArtist);
+            actionBar.setTitle(nTitle);
+        }
+        if (position == 4) {
+            Intent intent = getIntent();
+            String img = intent.getStringExtra("image");
+            String nTitle = intent.getStringExtra("title");
+            String nArtist = intent.getStringExtra("artist");
+            Picasso.get().load(img).into(imageView);
+            title.setText(nTitle);
+            String byArtist = "By: " + nArtist;
+            artist.setText(byArtist);
             actionBar.setTitle(nTitle);
         }
     }

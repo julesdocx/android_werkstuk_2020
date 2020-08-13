@@ -34,11 +34,13 @@ public class firstFragment extends Fragment {
 
     ImageView imageView;
     ListView listView;
-    String titles[] = {"Celebrity Rehab", "Dance of the Young", "Personel Horizon"};
-    String artists[] = {"Katie Vick", "Otro", "Iku"};
+    String titles[] = {"Celebrity Rehab", "Dance of the Young", "Personel Horizon", "Towards Yesterday", "GG Nevermind"};
+    String artists[] = {"Katie Vick", "Otro", "Iku", "Cornelis", "Nav Gul"};
     String imgUrls[] = {"https://firebasestorage.googleapis.com/v0/b/jules-docx-androidstudio.appspot.com/o/102630150_558610248183627_8227748301609830273_n.jpg?alt=media&token=7f92cb7e-1fd0-4207-b37b-cc1f88695e98",
                         "https://firebasestorage.googleapis.com/v0/b/jules-docx-androidstudio.appspot.com/o/106011458_263253914936711_756682807127883080_n.png?alt=media&token=5dd2483a-245f-4c5e-8e0f-97fea09fef0f",
-                        "https://firebasestorage.googleapis.com/v0/b/jules-docx-androidstudio.appspot.com/o/56764472_579673252530597_7096499730749849600_n.png?alt=media&token=587aef03-83fe-4ef1-ac51-7d3728768d5d"};
+                        "https://firebasestorage.googleapis.com/v0/b/jules-docx-androidstudio.appspot.com/o/56764472_579673252530597_7096499730749849600_n.png?alt=media&token=587aef03-83fe-4ef1-ac51-7d3728768d5d",
+                        "https://firebasestorage.googleapis.com/v0/b/jules-docx-androidstudio.appspot.com/o/76636721_456649411702362_1210729878920364032_n.png?alt=media&token=1ea3f4d2-e998-4969-b09b-508ed487c0ac",
+                        "https://firebasestorage.googleapis.com/v0/b/jules-docx-androidstudio.appspot.com/o/goodgame%20nevermind.jpg?alt=media&token=16bf1384-54b4-490b-9201-afaaf79d119e"};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -73,6 +75,22 @@ public class firstFragment extends Fragment {
                     intent.putExtra("title", titles[2]);
                     intent.putExtra("artist", artists[2]);
                     intent.putExtra("position", ""+2  );
+                    startActivity(intent);
+                }
+                if (position == 3) {
+                    Intent intent = new Intent(getActivity(), InsertActivity.class);
+                    intent.putExtra("image", imgUrls[3]);
+                    intent.putExtra("title", titles[3]);
+                    intent.putExtra("artist", artists[3]);
+                    intent.putExtra("position", ""+3  );
+                    startActivity(intent);
+                }
+                if (position == 4) {
+                    Intent intent = new Intent(getActivity(), InsertActivity.class);
+                    intent.putExtra("image", imgUrls[4]);
+                    intent.putExtra("title", titles[4]);
+                    intent.putExtra("artist", artists[4]);
+                    intent.putExtra("position", ""+4  );
                     startActivity(intent);
                 }
             }

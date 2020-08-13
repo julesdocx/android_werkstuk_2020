@@ -42,7 +42,7 @@
         android:onClick="addHighFives"
         android:paddingLeft="15dip"
         android:paddingRight="15dip"
-        android:text="@string/highfife"
+        android:text="@string/highfive"
         android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"

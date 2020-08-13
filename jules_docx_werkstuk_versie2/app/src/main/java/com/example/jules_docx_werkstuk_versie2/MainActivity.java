@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("Home");
+        actionBar.setTitle("My acadamie");
         setContentView(R.layout.activity_main);
         setUpNavigation();
         dbRoom = Room.databaseBuilder(getApplicationContext(),

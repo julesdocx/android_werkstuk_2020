@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">jules_docx_werkstuk_versie2</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="highfife">High five</string>
+    <string name="highfive">High five</string>
+    <string name="subtitle">The title of this screen (jules docx) is demo data red from the mysqlite room service</string>
 </resources>
