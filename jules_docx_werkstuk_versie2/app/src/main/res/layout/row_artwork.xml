@@ -22,8 +22,10 @@
         android:layout_height="wrap_content"
         android:text="Artwork Title"
         android:textStyle="bold"
-        android:layout_margin="8dp"
-        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
         android:textColor="@color/colorPrimary"/>
 
     <TextView
@@ -31,8 +33,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Artist and features"
-        android:layout_margin="8dp"
-        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"        android:textSize="14sp"
         android:textColor="@color/colorPrimary"/>
 
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+         />
+    <item
+        android:state_focused="true"
+         />
+    <item
+        android:background="@drawable/circle"
+        android:drawableEnd="@drawable/ic_high_five"
+        android:drawablePadding="5dip"
+        android:onClick="addHighFives"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="@string/highfive"
+        android:textColor="@color/colorPrimary"
+         />
+</selector>

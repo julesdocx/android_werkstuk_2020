@@ -4,20 +4,20 @@
     <item
         android:color="@color/colorPrimary"
         android:id="@+id/firstFragment"
-        android:title="Art"
+        android:title="@string/exposition"
         android:icon="@drawable/ic_home_black_24dp"
         app:itemIconTint="@color/colorPrimary"/>
 
     <item
         android:color="@color/colorPrimary"
         android:id="@+id/secondFragment"
-        android:title="Music"
+        android:title="@string/layers"
         android:icon="@drawable/ic_hot_tub_black_24dp"
         app:itemIconTint="@color/colorPrimary"/>
     <item
         android:color="@color/colorPrimary"
         android:id="@+id/thridFragment"
-        android:title="About me"
+        android:title="@string/extra"
         android:icon="@drawable/ic_person_black_24dp"
         app:itemIconTint="@color/colorPrimary"/>
 </menu>

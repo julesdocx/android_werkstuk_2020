@@ -26,30 +26,30 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
-                android:text="Artworks"
+                android:text="@string/artworks_title"
                 android:textAlignment="textStart"
                 android:textColor="@color/colorPrimary"
-                android:textSize="32sp"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="A collection of digital art, there names and artists. Make sure you scroll through them all and take a detailed look at one by pressing their card."
+                android:text="@string/artwork_subtitle"
                 android:textColor="@color/colorPrimary"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
-                android:layout_marginTop="10dp"
-                />
+                android:layout_marginTop="10dp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/colorPrimary"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -73,12 +73,11 @@
                     <ListView
                         android:id="@+id/artworkList"
                         android:layout_width="match_parent"
-                        android:layout_height="690dp"
+                        android:layout_height="580dp"
                         tools:ignore="NestedScrolling" />
 
                 </LinearLayout>
             </ScrollView>
-
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

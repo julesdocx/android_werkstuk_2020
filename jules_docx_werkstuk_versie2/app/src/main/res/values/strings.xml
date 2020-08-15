@@ -1,6 +1,12 @@
 <resources>
-    <string name="app_name">jules_docx_werkstuk_versie2</string>
-
+    <string name="app_name">My academy</string>
     <string name="highfive">High five</string>
     <string name="subtitle">The title of this screen (jules docx) is demo data red from the mysqlite room service</string>
+    <string name="layer_drawable_subtitle">The art below is made out of a LayerDrawable in android studio.</string>
+    <string name="layer_drawable_title">A layer sketch</string>
+    <string name="artwork_subtitle">A collection of digital art with their names and artists. Make sure you scroll through them all and take a detailed look at one by pressing their cards.</string>
+    <string name="artworks_title">Artworks</string>
+    <string name="extra">Extra</string>
+    <string name="layers">Layers</string>
+    <string name="exposition">Exposition</string>
 </resources>

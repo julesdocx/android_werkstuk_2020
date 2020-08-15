@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mijn academie</string>
+    <string name="highfive">High five</string>
+    <string name="subtitle">De titel op dit scherm (jules docx) is gelezen demo data uit de mysqlite room service</string>
+    <string name="layer_drawable_subtitle">Het grafish werk hieronder is gemaakt met de LayerDrawable in android studio.</string>
+    <string name="layer_drawable_title">Een Lagen werk</string>
+    <string name="artwork_subtitle">Een collectie van digitale kunst samen met hun naam en artist. Neem zeker de tijd om er eens door te scrollen en er op te drukken voor een uitvergrote versie.</string>
+    <string name="artworks_title">Digitale Kunst</string>
+    <string name="exposition">Expositie</string>
+    <string name="extra">Extra</string>
+    <string name="layers">Lagen</string>
+</resources>
