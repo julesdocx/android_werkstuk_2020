@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import java.util.List;
@@ -21,11 +22,15 @@ public class thridFragment extends Fragment {
         // Required empty public constructor
     }
 
+    TextView txtTitle;
+    CheckBox checkBox;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_thrid, container, false);
-        TextView txtTitle = view.findViewById(R.id.titleName);
+        txtTitle = view.findViewById(R.id.titleName);
+        checkBox = view.findViewById(R.id.theCheckBox);
         List<User> users = MainActivity.dbRoom.myDao().getUsers();
 
         String fullName = "";
@@ -36,6 +41,19 @@ public class thridFragment extends Fragment {
             fullName = fullName + firstName + lastName;
         }
         txtTitle.setText(fullName);
+
+        checkBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (checkBox.isChecked()) {
+                    checkBox.setText(R.string.checked);
+                    checkBox.setTextColor(getResources().getColor(R.color.checked));
+                } else {
+                    checkBox.setText(R.string.unchecked);
+                    checkBox.setTextColor(getResources().getColor(R.color.unchecked));
+                }
+            }
+        });
 
         return view;
     }

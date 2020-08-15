@@ -9,4 +9,8 @@
     <string name="extra">Extra</string>
     <string name="layers">Layers</string>
     <string name="exposition">Exposition</string>
+
+    <string name="checked">checked</string>
+    <string name="unchecked">unchecked</string>
+
 </resources>

@@ -10,4 +10,7 @@
     <string name="exposition">Expositie</string>
     <string name="extra">Extra</string>
     <string name="layers">Lagen</string>
+
+    <string name="checked">checked</string>
+    <string name="unchecked">unchecked</string>
 </resources>
