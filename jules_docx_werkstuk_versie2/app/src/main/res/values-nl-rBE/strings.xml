@@ -13,4 +13,7 @@
 
     <string name="checked">checked</string>
     <string name="unchecked">unchecked</string>
+
+    <string name="snackbar_highfives">Bedankt voor de highFive! Totale high fives:</string>
+
 </resources>

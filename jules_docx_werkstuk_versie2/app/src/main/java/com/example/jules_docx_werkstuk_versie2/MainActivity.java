@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void performSnackbar(View view) {
-        Snackbar mySnackbar = Snackbar.make(view, "Thx for the high five! Total high fives: " + highFives, 3000);
+        Snackbar mySnackbar = Snackbar.make(view, getResources().getString(R.string.snackbar_highfives) + highFives, 3000);
         mySnackbar.show();
     }
 

@@ -36,7 +36,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/circle"
+        android:background="@drawable/state_drawabe"
         android:drawableEnd="@drawable/ic_high_five"
         android:drawablePadding="5dip"
         android:onClick="addHighFives"
