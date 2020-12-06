@@ -1,4 +1,4 @@
-# android_werkstuk_augustus_2020
+# android_werkstuk_2020
 
 Erasmushogeschool Brussel
 
